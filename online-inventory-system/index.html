@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Inventory & Document Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📦 Online Inventory & Document Management System</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Inventory</a>
+      <a href="#">Documents</a>
+      <a href="#">Reports</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inventory">
+      <h2>Inventory</h2>
+      <button onclick="addItem()">Add Item</button>
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="documents">
+      <h2>Documents</h2>
+      <input type="file" id="docUpload" multiple>
+      <ul id="docList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
